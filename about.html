@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - My E-Commerce Grocery Store</title>
+</head>
+<body>
+    <header>
+        <div class="logo">My Grocery Store</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">🛒</div>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to My Grocery Store, your one-stop destination for all your grocery needs. At My Grocery Store, we are committed to providing high-quality products, a seamless shopping experience, and exceptional customer service.</p>
+
+        <h3>Our Mission</h3>
+        <p>Our mission is to make grocery shopping convenient, affordable, and enjoyable for our customers. We strive to offer a wide variety of fresh and quality products, ensuring that you have access to everything you need to create delicious and healthy meals.</p>
+
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>High-Quality Products: We source our products from trusted suppliers to ensure freshness and quality.</li>
+            <li>Wide Selection: Explore a diverse range of grocery items, from fresh produce to pantry staples.</li>
+            <li>Convenient Shopping: Our user-friendly website allows you to shop from the comfort of your home, anytime, anywhere.</li>
+            <li>Fast and Reliable Delivery: Enjoy prompt and reliable delivery services to your doorstep.</li>
+            <li>Exceptional Customer Service: Our dedicated customer support team is here to assist you with any inquiries or concerns.</li>
+        </ul>
+    </section>
+
+    <div class="cart" id="cart">
+        <div class="cart-header">
+            <span class="close-icon" onclick="toggleCart()">×</span>
+            <h2>Your Cart</h2>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn" onclick="openCheckoutModal()">Checkout</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="modal-content">
+            <span class="close-icon" onclick="closeCheckoutModal()">×</span>
+            <h2>Checkout</h2>
+            <!-- Add checkout form or payment gateway integration here -->
+            <button class="confirm-btn" onclick="completePurchase()">Complete Purchase</button>
+        </div>
+    </div>
+
+    <section class="footer">
+        <p>&copy; 2024 My Grocery Store. All rights reserved.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact - My E-Commerce Store</title>
+</head>
+<body>
+    <header>
+        <div class="logo">My Store</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">🛒</div>
+    </header>
+
+    <section class="contacts" id="contacts">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>
+                <strong>John Doe</strong>
+                <p>Phone: +1 123-456-7890</p>
+            </li>
+            <li>
+                <strong>Jane Smith</strong>
+                <p>Phone: +1 234-567-8901</p>
+            </li>
+            <!-- Add more contacts as needed -->
+        </ul>
+    </section>
+
+    <div class="cart" id="cart">
+        <div class="cart-header">
+            <span class="close-icon" onclick="toggleCart()">×</span>
+            <h2>Your Cart</h2>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn" onclick="openCheckoutModal()">Checkout</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="modal-content">
+            <span class="close-icon" onclick="closeCheckoutModal()">×</span>
+            <h2>Checkout</h2>
+            <!-- Add checkout form or payment gateway integration here -->
+            <button class="confirm-btn" onclick="completePurchase()">Complete Purchase</button>
+        </div>
+    </div>
+
+    <section class="footer">
+        <p>&copy; 2024 My Store. All rights reserved.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
